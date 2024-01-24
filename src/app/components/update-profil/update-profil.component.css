@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+body {
+    background: rgb(99, 39, 120)
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+  }
+  
+
+  
+  
+  .add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+  }
+  ::-webkit-scrollbar {
+                                  width: 8px;
+                                }
+                                /* Track */
+                                ::-webkit-scrollbar-track {
+                                  background: #f1f1f1; 
+                                }
+                                 
+                                /* Handle */
+                                ::-webkit-scrollbar-thumb {
+                                  background: #023b6d; 
+                                }
+                                
+                                /* Handle on hover */
+                                ::-webkit-scrollbar-thumb:hover {
+                                  background: #023b6d; 
+                                } body {
+    background: rgb(99, 39, 120)
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+  }
+  
+  .profile-button {
+    background: #023b6d;
+    width: 135px;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 13px ;
+   
+  }
+  
+  .profile-button:hover {
+    background: gray
+  }
+  
+  .profile-button:focus {
+    background: gray;
+    box-shadow: none
+  }
+  
+  .profile-button:active {
+    background: gray;
+    box-shadow: none
+  }
+  
+  .back:hover {
+    color: #682773;
+    cursor: pointer
+  }
+  
+  .labels {
+    font-size: 17px
+  }
+  
+  .add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+  }
+  h4{
+    font-size: 15px;
+    
+  }
+  h3{
+    font-size: 26px;
+    color: #00a6eb;
+    
+  }
+  
+  
+  p{
+    color: gray !important;
+  }
+  .showback {
+    background-color: #023b6d;
+    box-shadow: 0 2px 6px rgba(64,64,64,.7);
+    border-radius: 8px 8px 8px 8px;
+    margin-bottom: 1px;
+    font-weight: unset!important;
+  }
+  h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 0.5;
+    color: inherit;
+    font-size: 20px;
+  }

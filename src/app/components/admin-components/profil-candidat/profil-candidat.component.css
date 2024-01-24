@@ -1,0 +1,195 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+}*/
+
+
+body {
+  background: rgb(99, 39, 120)
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #BA68C8
+}
+
+.profile-button {
+  background: rgb(99, 39, 120);
+  box-shadow: none;
+  border: none
+}
+
+.profile-button:hover {
+  background: #682773
+}
+
+.profile-button:focus {
+  background: #682773;
+  box-shadow: none
+}
+
+.profile-button:active {
+  background: #682773;
+  box-shadow: none
+}
+
+.back:hover {
+  color: #682773;
+  cursor: pointer
+}
+
+
+
+.add-experience:hover {
+  background: #BA68C8;
+  color: #fff;
+  cursor: pointer;
+  border: solid 1px #BA68C8
+}
+::-webkit-scrollbar {
+                                width: 8px;
+                              }
+                              /* Track */
+                              ::-webkit-scrollbar-track {
+                                background: #f1f1f1; 
+                              }
+                               
+                              /* Handle */
+                              ::-webkit-scrollbar-thumb {
+                                background: #023b6d; 
+                              }
+                              
+                              /* Handle on hover */
+                              ::-webkit-scrollbar-thumb:hover {
+                                background: #023b6d; 
+                              } body {
+  background: rgb(99, 39, 120)
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #BA68C8
+}
+table{
+  margin-left:auto !important;
+  margin-right: auto !important;
+}
+.profile-button {
+  background: #023b6d;
+  width: 250px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 13px ;
+  margin-left: 60% !important;
+  margin-top: 3%;
+}
+.form-row {
+	position: relative;
+	margin-bottom: 24px;
+	padding-left: 60px;
+    padding-right: 450px;
+}
+input{
+  color: #023b6d;
+}
+button {
+  
+  overflow: visible;
+  background: #023b6d;
+  width: 250px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 13px;
+  margin-left: 10% !important;
+  color : #fff !important;
+}
+button:hover {
+  background: gray
+}
+
+button:focus {
+  background: gray;
+  box-shadow: none
+}
+
+button:active {
+  background: gray;
+  box-shadow: none
+}
+
+.profile-button:hover {
+  background: gray
+}
+
+.profile-button:focus {
+  background: gray;
+  box-shadow: none
+}
+
+.profile-button:active {
+  background: gray;
+  box-shadow: none
+}
+
+.back:hover {
+  color: #682773;
+  cursor: pointer
+}
+
+.labels {
+  font-size: 15px
+}
+
+.add-experience:hover {
+  background: #BA68C8;
+  color: #fff;
+  cursor: pointer;
+  border: solid 1px #BA68C8
+}
+h4{
+  font-size: 14px;
+  
+}
+h3{
+  font-size: 24px;
+  color: #00a6eb;
+  
+}
+
+
+p{
+  color: gray !important;
+}
+.showback {
+  background-color: #023b6d;
+  box-shadow: 0 2px 6px rgba(64,64,64,.7);
+  border-radius: 7px 7px 7px 7px;
+  margin-bottom: 1px;
+  font-weight: unset!important;
+}
+h2 {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  color: inherit;
+  font-size: 20px;
+}
+
+
+
+.cv{
+  margin-left: 10px;
+}
+.flask{
+  font-size: 24px;
+    color: #00a6eb;
+    text-align: center;
+}
+

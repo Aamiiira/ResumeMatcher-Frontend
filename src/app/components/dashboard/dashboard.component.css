@@ -1,0 +1,94 @@
+.container-xxl{
+   
+    width: auto !important;
+}
+.mat-card{
+    margin-top: 3% !important;
+    border: 2 solid #d9dee3 !important;
+}
+.align-items-end {
+    align-items: flex-end !important;
+}
+.d-flex {
+    display: flex !important;
+    margin-top: 3% !important;
+    position: relative !important;
+    width: 100% !important;
+    padding-right: 51px !important;
+    padding-left: 19px !important;
+}
+.row {
+    --bs-gutter-x: 1.625rem !important;
+    --bs-gutter-y: 0 !important;
+    display: flex !important;
+    flex-wrap: wrap !important ;
+    margin-top: calc(-1 * var(--bs-gutter-y)) !important;
+    margin-right: calc(-0.5 * var(--bs-gutter-x)) !important;
+    margin-left: calc(-0.5 * var(--bs-gutter-x)) !important;
+    
+}
+.stats-cards{
+    background-clip: border-box !important;
+    border: 2 solid #d9dee3 !important;
+    border-radius: 0.75rem !important;
+}
+.card {
+   
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    min-width: 0 !important;
+    word-wrap: break-word !important;
+    background-color: #fff !important;
+    background-clip: border-box !important;
+    border: 2 solid #d9dee3 !important;
+    border-radius: 0.75rem !important;
+    margin-left: 250px !important;
+    width: 80% !important;
+    
+    
+}
+.card-body {
+    flex: 1 1 auto !important;
+    padding: 1.5rem 1.5rem !important;
+    
+}
+.text-primary {
+    color: #2199e8 !important;
+    size: 30px;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+    color: #697a8d !important;
+    padding-top: 3% !important;
+    position:50% !important;
+    width: 150% !important;
+    padding-right: 30px !important;
+    padding-left: 19px !important;
+}
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+.btn {
+
+
+    background: #fff !important ;
+    width: 135px !important;
+    height: 32px !important;
+    font-size: 16px !important;
+    border-radius: 13px !important;
+}
+.btn:hover {
+
+
+    background: #697a8d !important ;
+  
+}

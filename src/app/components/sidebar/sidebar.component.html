@@ -1,0 +1,68 @@
+  
+  <div>
+    <section id="container">
+     
+    <app-navbar></app-navbar>
+
+  <aside *ngIf="isLoggedIn">
+    
+    <div id="sidebar" class="nav-collapse nicescroll-rails" tabindex="5000" style="overflow-y: scroll;  
+    outline: none; margin-left: 0px;
+    z-index: 1;
+    /* overflow-x: hidden; */
+    
+    " > <!-- *ngIf="isLoggedIn";-->
+      
+      <!-- sidebar menu start-->
+      <ul class="sidebar-menu" id="nav-accordion">
+        <p class="centered"><a><img src="http://localhost:8080/avatar/{{id}}" class="img-circle" width="80" routerLink ="/profil" *ngIf="img"></a>
+          <a><img src="../../../assets/img/avatar.jpg" class="img-circle" width="80" routerLink ="/profil" *ngIf="!img"></a></p>
+        <h5 class="centered"><h2>{{username}}</h2></h5>
+
+        <li class="mt">
+          <a routerLink ="/dashboard" >
+            <i class="fa fa-tachometer" aria-hidden="true"></i>
+            <span>Dashboard</span>
+            </a>
+        </li>
+
+        <li class="sub-menu dcjq-parent-li" routerLinkActive = "active" *ngIf="showAdminBoard">
+          <a href="javascript:;">
+            <i class="fa fa-briefcase"></i>
+            <span routerLink ="/recrutement" >Recruitment</span>
+            <span class="dcjq-icon"></span></a>
+    
+        </li>
+
+
+        <li class="sub-menu dcjq-parent-li" routerLinkActive = "active" *ngIf="showAdminBoard" >
+          <a href="javascript:;">
+            <i class="fa fa-cogs"></i>
+            <span routerLink ="/profil">Settings
+            </span>
+            <span class="dcjq-icon"></span></a>
+    
+        </li>
+
+        
+      </ul>
+      <!-- sidebar menu end-->
+    </div>
+  </aside>
+  <!--sidebar end-->
+  <section id="main-content">
+    <section class="wrapper">
+
+        <div class="container-fluid">
+          <router-outlet></router-outlet>
+        </div>
+      </section>
+      </section>
+
+
+  </section>
+
+  </div>
+
+
+  

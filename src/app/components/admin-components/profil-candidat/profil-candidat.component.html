@@ -1,0 +1,134 @@
+<div style="margin-top: 2%;">
+</div>
+<div class="showback" style="color: white;"  >
+  <h2><i class="fa fa-angle-center"></i> Candidate Profile</h2></div>
+    <br><br>
+<div class="container rounded bg-white mt-5 mb-5">
+    <div class="row">
+<div class="col-md-3 border-right">
+  <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+      <img class="rounded-circle mt-5" width="150px" src="../../../../assets/img/candi.png" >
+      <br>
+      <br>
+      <h3 class="font-weight-bold">{{candidate.prenom}} {{candidate.nom}}</h3>
+  </div>
+</div>
+<div class="col-md-5 border-right">
+    <div class="p-3 py-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3 class="text-right" class="fa fa-angle-right"> General  Informations</h3>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <h4 class="labels">Email</h4>
+                <p>{{candidate.email}}</p>
+            </div> 
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <h4 class="labels">Phone</h4>
+                <p>{{candidate.phone}}</p>
+            </div>
+            </div>
+        <div class="row mt-3">
+            <div class="col-md-6"><h4 class="labels" >Date of birth</h4><p>{{candidate.dateOfBirth}}</p>
+            </div>
+        </div>
+       
+       
+    <div class="row mt-3">
+            <div class="col-md-6">
+             
+                <p>{{candidate.pathCv}}  <a href="http://localhost:8080/downloadFile/{{candidate.pathCv}}"
+                    class="cv" (change)="onFileSelected($event)" ><i class="fa fa-download"></i></a></p>
+                      
+                    
+                   
+
+            </div>
+            
+        </div>  
+    
+     <!--<div class="row mt-3">
+            <div class="col-md-6">
+              <a href="javascript:void(0)" (click)="onUpload($event)">
+                <h4 class="labels">CV</h4>
+              </a>
+              <p>{{candidate.pathCv}} <a href="http://localhost:8080/downloadFile/{{candidate.pathCv}}"
+                  class="cv" (change)="onFileSelected($event)"><i class="fa fa-download"></i></a></p>
+              <div *ngIf="matchPercentage == null">
+                Result of similarity: {{ matchPercentage }}%
+              </div>
+            </div>
+          </div>-->     
+        <div class="row mt-3">
+          <div class="col-md-6">
+              <h4 class="labels">Cover Letter</h4>
+              <p>{{candidate.pathMotivationLetter}} <a href="http://localhost:8080/downloadFile/{{candidate.pathMotivationLetter}}"
+                class="cv"><i class="fa fa-download"></i></a> </p>
+          </div>
+          
+      </div>
+     
+        
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="p-3 py-5">
+        <div class="d-flex justify-content-between align-items-center experience">
+        <h3 class="text-right" class="fa fa-angle-right"> Experiences</h3>
+        </div><br>
+        <div class="col-md-12">
+            <h4 class="labels">Level</h4>
+            <p>{{candidate.niveauEtud}}</p>
+        </div> <br>
+            <div class="col-md-12">
+                <h4 class="labels">Diploma Title</h4>
+                <p>{{candidate.titreDiplome}}</p>
+            </div> <br>
+            <div class="col-md-12">
+                <h4 class="labels">Engineering school</h4>
+                <p>{{candidate.university}}</p>
+            </div> <br>
+            <div class="col-md-12">
+                <h4 class="labels">level of experience</h4>
+                <p>{{candidate.niveauExp}}</p>
+            </div> <br>
+            <div class="col-md-12">
+                <h4 class="labels">Experiences</h4>
+                <p>{{candidate.experience}}</p>
+            </div> <br>
+            
+    </div>
+  </div>
+ 
+</div>
+
+
+
+
+<table>
+  <tr>
+    <td><h4 class="labels">Enter the candidate's resume :</h4><input type="file" class="form-control" id="customFile" (change)="onResumeFileSelected($event)" style="height:100%" ></td>
+    <td><button class="btn btn-primary profile-button" type="button"  (click)="sendConfirmMsg(candidate.idUser)" >Send An Email Of Confirmation</button></td>
+  </tr>
+  <tr>
+    <td><h4 class="labels">Enter the job description :</h4><input type="file" id="customFile" class="form-control"  (change)="onJobDescriptionFileSelected($event)" style="height:100%"></td>
+
+    <td> <button class="btn btn-primary profile-button" type="button"  (click)="sendDenyMsg(candidate.idUser)">Send An Email Of Rejection</button></td>
+  </tr>
+</table>
+
+ 
+<div class="mt-5 text-center">
+<button (click)="compareFiles()">Compare Files</button>
+</div>
+<br>
+<div *ngIf="matchPercentage!" class="flask">
+    <h3>Matching Percentage: {{ matchPercentage }}%</h3>
+  </div>
+
+   
+
+
+   
